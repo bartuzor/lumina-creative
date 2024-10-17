@@ -1,0 +1,473 @@
+/* reset css */
+button,
+hr,
+input {
+    overflow: visible;
+}
+
+progress,
+sub,
+sup {
+    vertical-align: baseline;
+}
+
+[type="checkbox"],
+[type="radio"],
+legend {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+details,
+main {
+    display: block;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+a {
+    background-color: transparent;
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+img {
+    border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+[type="button"],
+[type="reset"],
+[type="submit"],
+button {
+    -webkit-appearance: button;
+}
+
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring,
+button:-moz-focusring {
+    outline: ButtonText dotted 1px;
+}
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    white-space: normal;
+}
+
+textarea {
+    overflow: auto;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+summary {
+    display: list-item;
+}
+
+[hidden],
+template {
+    display: none;
+}
+
+/* reset css end */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container {
+    max-width: 75%;
+    margin: 0px auto;
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+/*header start*/
+
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+
+}
+
+header .logo a {
+    display: inline-block;
+
+}
+
+header .logo img {
+    height: 35px;
+    max-width: 100%;
+
+}
+
+header .menu {
+    display: flex;
+    height: 80px;
+
+}
+
+header .menu ul {
+    list-style: none;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    gap: 25px
+}
+
+header .menu li {
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+header .menu ul li a {
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+
+header .menu ul li:hover {
+    background-color: rgb(212, 190, 146);
+}
+
+/*header end*/
+
+/*content start*/
+
+
+.hero {
+
+    display: flex;
+
+
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    height: 450px;
+
+
+
+}
+
+.hero .container h1 {
+    text-align: center;
+    max-width: 75%;
+    margin: 0px;
+    font-size: 50px;
+
+
+}
+
+
+
+.portfolio .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio .img-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.portfolio .img-container a {
+    padding: 10px;
+}
+
+.portfolio .img-container img {
+    border-radius: 10px;
+
+}
+
+
+
+.services {
+    background-color: #333;
+    padding: 15px 0px;
+    color: white;
+
+
+}
+
+.services .container {
+    gap: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 950px;
+    height: 100%;
+    padding-bottom: 25px;
+
+}
+
+.services h2 {
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+
+}
+
+.services .container p {
+    max-width: 350px;
+
+}
+
+.team .container {
+    gap: 10px;
+}
+
+.team h2 {
+    text-align: center;
+}
+
+.team img {
+    border-radius: 10px;
+}
+
+.contact-us .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us .container form {
+    display: flex;
+    flex-direction: column;
+
+    width: 70%;
+    margin-bottom: 100px;
+}
+
+.contact-us .container form input {
+    margin: 25px 10px;
+    border: 0px;
+    border-bottom: 1px solid black;
+}
+
+.contact-us .container form textarea {
+    margin: 25px 10px;
+    height: 150px;
+    border: 0px;
+    border-bottom: 1px solid black;
+}
+
+.contact-us .container form button {
+    background-color: white;
+    color: black;
+    height: 50px;
+    border: 0.5px solid black;
+}
+
+.contact-us .container form button:hover {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+.bg-dark {
+    background-color: #333;
+    color: white;
+
+}
+
+/*content end*/
+
+.txt-secondary {
+    color: rgb(212, 190, 146);
+}
+
+/*footer start*/
+.footer {
+    border-top: 0.5px solid gray;
+
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 950px;
+
+}
+
+.footer .container img {
+    height: 35px;
+    width: 125px;
+}
+
+.footer .container ul {
+    display: flex;
+    gap: 10px;
+    padding: 0px;
+}
+
+.footer .container a {
+    text-decoration: none;
+    color: black;
+}
+
+/*footer end*/
+
+@media(max-width:768px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    .portfolio .img-container {
+        flex-direction: column;
+    }
+
+    .services .container {
+        flex-direction: column;
+    }
+
+    .team .container {
+        flex-direction: column;
+    }
+
+    .hero .container {
+        height: 250px;
+        max-width: 100%;
+    }
+
+    .hero .container h1 {
+        font-size: 22px;
+
+    }
+
+}
